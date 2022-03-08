@@ -35,16 +35,16 @@ for (number = 1; number <= 100; number++) {
     }
 }
 
-const blocks = document.querySelector("div.blocks")
+const blocks = document.querySelector("div.blocks");
 for (number = 1; number <= 100; number++) {
     let element;
     if ((number % 3 == 0) && (number % 5 == 0)){
-        element = `<div class="square">${divisibilePer3}
-        ${divisibilePer5}</div>`
+        element = `<div class="square fizz-buzz">${divisibilePer3}
+        ${divisibilePer5}</div>`;
     } else if (number % 3 == 0) {
-        element = `<div class="square">${divisibilePer3}</div>`
+        element = `<div class="square fizz">${divisibilePer3}</div>`;
     } else if (number % 5 == 0) {
-        element = `<div class="square">${divisibilePer5}</div>`
+        element = `<div class="square buzz">${divisibilePer5}</div>`
     } else {
         element = `<div class="square">${number}</div>`
     }

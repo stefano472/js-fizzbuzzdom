@@ -41,3 +41,16 @@ h1 {
   display: block;
   padding-bottom: 100%;
 }
+
+.fizz-buzz {
+  background-color: hsl(261, 90%, 42%);
+  color: white;
+}
+.fizz {
+  background-color: hsl(141, 46%, 42%);
+  color: white;
+}
+.buzz {
+  background-color: hsl(340, 46%, 41%);
+  color: white;
+}
