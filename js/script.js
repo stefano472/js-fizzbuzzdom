@@ -10,6 +10,7 @@ const divisibilePer5 = 'buzz'
 
 let number;
 for (number = 1; number <= 100; number++) {
+    // non posso utilizzare switch in questo caso perchè la mia expression cambia (non è solo number)
     // switch(number) {
     //     case (number % 3 === 0) && (number % 5 === 0):
     //         console.log('fizzbuzz');
@@ -23,7 +24,6 @@ for (number = 1; number <= 100; number++) {
     //     default:
     //         console.log(number);
     // }
-
     if ((number % 3 == 0) && (number % 5 == 0)){
         console.log(divisibilePer3+divisibilePer5)
     } else if (number % 3 == 0) {
@@ -41,6 +41,8 @@ for (number = 1; number <= 100; number++) {
     if ((number % 3 == 0) && (number % 5 == 0)){
         element = `<div class="square fizz-buzz">${divisibilePer3}
         ${divisibilePer5}</div>`;
+        // non posso applicare style all'element perchè non è ancora presente dnel DOM dell'html
+        // element.style.backgroundColor = `rgb(100, 100, 100)`;
     } else if (number % 3 == 0) {
         element = `<div class="square fizz">${divisibilePer3}</div>`;
     } else if (number % 5 == 0) {
