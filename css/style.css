@@ -6,7 +6,7 @@
 }
 :root {
   --color-light: white;
-  --color-primary: lightskyblue;
+  --color-primary: #02e0e0;
 }
 body {
   background-color: var(--color-primary);
@@ -32,9 +32,11 @@ h1 {
 
 .square {
   flex-basis: calc(100% / 10 - 0.5rem);
-  color: var(--color-primary);
-  background-color: var(--color-light);
+  color: var(--color-light);
+  background-color: var(--color-primary);
   border-radius: 5px;
+  border-radius: 11px;
+  box-shadow: 5px 5px 2px #015a5a, -4px -4px 1px #03ffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,14 +48,11 @@ h1 {
 }
 
 .fizz-buzz {
-  background-color: hsl(261, 90%, 42%);
-  color: var(--color-light);
+  background-color: hsl(261, 100%, 53%);
 }
 .fizz {
-  background-color: hsl(141, 46%, 42%);
-  color: var(--color-light);
+  background-color: hsl(141, 50%, 52%);
 }
 .buzz {
-  background-color: hsl(340, 46%, 41%);
-  color: var(--color-light);
+  background-color: hsl(344, 56%, 55%);
 }
